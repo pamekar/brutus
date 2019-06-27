@@ -48,6 +48,23 @@ class RegistrationMiddleware
         }
 
         if (!empty($validation)) {
+            $characters = [
+                '~',
+                '!',
+                '@',
+                '$',
+                '#',
+                '%',
+                '^',
+                '&',
+                '*',
+                '(',
+                ')'
+            ];
+            $validation['suggestion'] = "You can try <em>"
+                . Str::upper(Str::random(2)) . Str::random(8) . mt_rand(100,
+                    1000) . array_rand($characters) . array_rand($characters)
+                . "</em>";
             return redirect('register')->with("password", $validation);
         }
 
