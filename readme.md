@@ -1,22 +1,22 @@
 # BRUTUS CHALLENGE
 
-##Project Title‭ ‬:‭ ‬Brutus challenge
+## Project Title‭ ‬:‭ ‬Brutus challenge
 
-##Project type‭ ‬:‭ ‬Laravel‭  ‬App
+## Project type‭ ‬:‭ ‬Laravel‭  ‬App
 
-###Description:‭ 
+### Description:‭ 
  ‬RuperMurder is a small startup that has many concerns about hacking their login system.‭ ‬It recruits you to create a complete authentication system to protect against hackers.
 
-###Concept tested:
+### Concept tested:
 ‬Mysql,‭ ‬Regex,‭ ‬algorithms and data structures
 
-###Level:
+### Level:
 Intermediate
 
-###Framework used:‭
+### Framework used:‭
 ‬Laravel
 
-###Requirement:
+### Requirement:
 
 1-‭ ‬The password need to this password must be complex
 
@@ -45,4 +45,4 @@ Include Uppercase Characters for‭ ‬2‭ ‬two first caracter:
 3-‭ ‬an **email alert** will be sent by email to the owner of the email account.
 
 
-####View Demo [HERE](http://laravel-brutus.herokuapp.com)
+#### View Demo [HERE](http://laravel-brutus.herokuapp.com)
