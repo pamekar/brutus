@@ -16,7 +16,7 @@
                                 <ul>
                                     @foreach($passwordError as $error)
                                         <li>
-                                            {{$error}}
+                                            {!! $error !!}
                                         </li>
                                         @endforeach
                                 </ul>
