@@ -34,7 +34,7 @@ class RegistrationMiddleware
 
         if (preg_match_all("/[`'\\~!@# $*%^&()<>,:;{}\|]/", $password) < 2) {
             $validation['containsSymbols']
-                = "Your password must include at least 2 symbols (`'\\~!@# $*%^&()<>,:;{}\|)'";
+                = "Your password must include at least 2 symbols in the set -> `'\\~!@# $*%^&()<>,:;{}\| <-";
         }
 
         if (preg_match_all("/[0-9]/", $password) < 3) {
