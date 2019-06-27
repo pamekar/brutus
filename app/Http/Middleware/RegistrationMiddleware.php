@@ -63,8 +63,10 @@ class RegistrationMiddleware
             ];
 
             $validation['suggestion'] = "You can try: <strong>"
-                . Str::upper(Str::random(2)) . Str::random(8) . mt_rand(100,
-                    1000) . $characters[array_rand($characters)] . $characters[array_rand($characters)]
+                . Str::upper(Str::random(2))
+                . $characters[array_rand($characters)] . Str::random(9)
+                . mt_rand(100,
+                    10000) . $characters[array_rand($characters)]
                 . "</strong>";
             return redirect('register')->with("password", $validation);
         }
